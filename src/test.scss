@@ -1,0 +1,115 @@
+header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(23, 46, 138, 0.4),rgba(42, 55, 107, 0.7)),url(./assets/IMGmj.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+
+
+    img {
+        width: 20%;
+        border-radius: 2em;
+    }
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+
+    ul li {
+        display: inline-block;
+        list-style: none;
+        padding: 8px 12px;
+        position: relative;
+
+        &:after {
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #3678f4;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 13px;
+    }
+
+}
+
+.text-box {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+
+    h1 {
+        font-size: 62px;
+
+    }
+    
+    p {
+        margin: 10px 0 40px;
+        font-size: 14px;
+        color: white;
+    }
+
+    .hero-btn {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        border: 1px solid white;
+        padding: 12px 34px;
+        font-size: 13px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+
+        &:hover {
+            background: #3678f4;
+            border: 1px solid #3678f4;
+            transition: 1s;
+        }
+    }
+
+
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+        background: #3678f4;
+        border: 1px solid #3678f4;
+        transition: 1s;
+    }
+}
